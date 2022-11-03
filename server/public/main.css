@@ -1,6 +1,6 @@
 body {
   background-color: #faf8f1;
-  color: #0a1520;
+  color: #faf8f1;
   font-family: 'Poppins', sans-serif;
   text-align: center;
   padding: 0.5%;
@@ -9,9 +9,13 @@ body {
 
 .balloon-container {
   display: inline-block;
+  background-size: contain;
+  position: absolute;
+  bottom: 0%;
+  animation: move_y 50s forwards, oscil1 6s infinite;
+  left: 45%;
+
 }
-
-
 
 .balloon {
 
@@ -20,13 +24,17 @@ body {
   padding: 20px;
   margin: 20px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid #faf8f1;
+}
 
-  background-size: contain;
-  position: absolute;
-  bottom: 0%;
-  animation: move_y 50s forwards, oscil1 6s infinite;
-  left: 45%;
+
+.popped-balloon {
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 50%;
+  background-color: #14dc06;
 }
 
 
@@ -45,7 +53,7 @@ body {
   from {
     translate: 0 0;
     transform: rotate(0deg);
-    animation-timing-function: cubic-bezier(0.9, 0.39, 0.9, 1);
+    animation-timing-function: cubic-bezier(0.1, 0.39, 0.9, 1);
   }
 
   25% {
@@ -72,14 +80,6 @@ body {
   }
 }
 
-
-.popped-balloon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #faf8f1;
-  border: 0px
-}
 
 .title {
   font-size: large;
