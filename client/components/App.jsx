@@ -22,13 +22,10 @@ function App() {
 
   return (
     <div>
-
       <div>
         <Title />
       </div>
-      <div className="button">
-        <RandomButton />
-      </div>
+      <div className="button"></div>
       <br></br>
       <div className="balloonpen">
         <Routes>
