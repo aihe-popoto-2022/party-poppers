@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react'
 import RandomButton from './RandomButton'
 import ProgressBar from '../ProgressBar'
@@ -6,6 +7,9 @@ import ProgressBar from '../ProgressBar'
 import Balloon from './Balloon'
 import { Route, Routes } from 'react-router-dom'
 
+//import Title from './Title'
+import Balloon from './Balloon'
+import { Route, Routes } from 'react-router-dom'
 function App() {
   const [value, setValue] = useState(0)
 
