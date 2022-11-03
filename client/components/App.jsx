@@ -22,13 +22,24 @@ function App() {
 
   return (
     <div>
-      <Title />
+
+      <div>
+        <Title />
+      </div>
+      <div className="button">
+        <RandomButton />
+      </div>
+      <br></br>
+      <div className="balloonpen">
+        <Routes>
+          <Route path="/" element={<Balloon />}></Route>
+        </Routes>
+      </div>
+      <br></br>
+
       <div>
         <ProgressBar value={value} max={100} />
       </div>
-      <Routes>
-        <Route path="/" element={<Balloon />}></Route>
-      </Routes>
     </div>
   )
 }
