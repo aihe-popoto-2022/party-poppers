@@ -2,4 +2,88 @@ body {
   background-color: #faf8f1;
   color: #0a1520;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 0.5%;
+}
+
+
+.balloon-container {
+  display: inline-block;
+}
+
+.balloon {
+
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  margin: 20px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.popped-balloon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #faf8f1;
+  border: 0px
+}
+
+.title {
+  font-size: large;
+  color: rgb(3, 4, 4);
+  text-align: center;
+}
+
+.progress {
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  background-color: rgb(251, 222, 34);
+  text-align: center;
+}
+
+.instructions {
+
+  height: 50px;
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: rgb(68, 197, 51);
+  text-align: center;
+
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  background: rgba(132, 231, 18, 0.477);
+  text-align: center;
+
+
+}
+
+
+.button {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 100px;
+  padding: 22px 33px;
+  font-size: 26px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #FFF;
+  background: #e54c49;
+  outline: none;
+  border-radius: 15px;
+
+
+
+  position: relative;
+  overflow: visible;
+
 }
