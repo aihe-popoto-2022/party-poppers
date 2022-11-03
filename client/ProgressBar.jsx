@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const ProgressBar = ({ value, max }) => {
   return (
-    <div>
+    <div className="progress">
       <progress value={value} max={max} />
       <span>{(value / max) * 100}% Ruined</span>
     </div>

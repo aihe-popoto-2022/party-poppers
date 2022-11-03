@@ -4,7 +4,7 @@ import ProgressBar from '../ProgressBar'
 
 // import Title from './Title'
 import Balloon from './Balloon'
-//import Title from './Title'
+import Title from './Title'
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -25,14 +25,21 @@ function App() {
   return (
     <div>
       <div>
+        <Title />
+      </div>
+      <div className="button">
         <RandomButton />
       </div>
+      <br></br>
+      <div className="balloonpen">
+        <Routes>
+          <Route path="/" element={<Balloon />}></Route>
+        </Routes>
+      </div>
+      <br></br>
       <div>
         <ProgressBar value={value} max={100} />
       </div>
-      <Routes>
-        <Route path="/" element={<Balloon />}></Route>
-      </Routes>
     </div>
   )
 }
