@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 function Balloon() {
-
   //possible button code
 
   // const [newColor, setNewColor] = useState({
@@ -15,7 +14,6 @@ function Balloon() {
   //       .padStart(6, 0)}`,
   //   })
   // }
-
 
   const colors = ['red', 'green', 'blue']
   const generateColor = () => {
@@ -40,19 +38,19 @@ function Balloon() {
           return (
             <div className="balloon-container" key={b.id}>
               <div
+                data-testid="balloon"
                 className="balloon"
                 style={{ backgroundColor: b.color }}
                 onClick={() => onPop(i)}
 
                 //onClick={handleButton} we want to pass this into the App component where we have the randBtn
-
               ></div>
             </div>
           )
         } else {
           return (
             <div className="balloon-container" key={i}>
-              <div className="popped-balloon"></div>
+              <div data-testid="balloon" className="popped-balloon"></div>
             </div>
           )
         }
@@ -62,7 +60,6 @@ function Balloon() {
 }
 
 export default Balloon
-
 
 {
   /* <motion.div
@@ -75,4 +72,3 @@ export default Balloon
   }}
 /> */
 }
-
