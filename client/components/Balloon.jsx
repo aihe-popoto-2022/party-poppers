@@ -50,7 +50,7 @@ function Balloon() {
         } else {
           return (
             <div className="balloon-container" key={i}>
-              <div data-testid="balloon" className="popped-balloon"></div>
+              <div className="popped-balloon"></div>
             </div>
           )
         }
