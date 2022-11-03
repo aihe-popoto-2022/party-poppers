@@ -27,7 +27,7 @@ function Balloon() {
   const onPop = (index) => {
     setBalloons((balloons) => {
       const b = [...balloons]
-      console.log(b)
+      //console.log(b)
       b[index].popped = true
       return b
     })
@@ -64,8 +64,6 @@ export default Balloon
   /* <motion.div
   animate={{
     x: 0,
-    backgroundColor: "#000",
-    boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.2)",
     position: "fixed",
     transitionEnd: {
       display: "none",
