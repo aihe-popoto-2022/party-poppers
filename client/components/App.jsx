@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import RandomButton from './RandomButton'
 import ProgressBar from '../ProgressBar'
 
-// import Title from './Title'
 import Balloon from './Balloon'
 import Title from './Title'
 import { Route, Routes } from 'react-router-dom'
@@ -24,6 +22,7 @@ function App() {
 
   return (
     <div>
+
       <div>
         <Title />
       </div>
@@ -37,6 +36,7 @@ function App() {
         </Routes>
       </div>
       <br></br>
+
       <div>
         <ProgressBar value={value} max={100} />
       </div>
