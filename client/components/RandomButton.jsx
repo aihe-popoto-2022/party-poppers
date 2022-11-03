@@ -3,19 +3,24 @@ import React, {useState} from 'react'
 
 function RandomButton(){
  
-  const [newColor, setNewColor] = useState({backgroundColor: 'red'})
+  // connect balloon shape to useState so that background colour of balloon starts at red.
+  const [newColor, setNewColor] = useState({
+    width: 50,
+    height: 50,
+    backgroundColor: 'red'})
 
   const handleButton=(event) => {
     setNewColor
+  // connect balloon shape to setNewColor so that background colour of balloon changes to random colour.
+  
     ({backgroundColor: `#${Math.floor(Math.random() * 0x1000000)
        .toString(16)
        .padStart(6, 0)}`
       })
+      console.log(backgroundColor)
     }
-    console.log(backgroundColor)
-  return (<button onClick = {handleButton}>
-
-  </button>
+   // 
+  return (<button onClick = {handleButton}>Random colour</button>
     )
 }
 

@@ -1,14 +1,18 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 import Title from './Title'
+import RandomButton from './RandomButton'
 
 function App() {
   return (
     <div>
       <Title />
-      <Routes>
+      <div>
+        <RandomButton/>
+      </div>
+      {/* <Routes>
         <Route />
-      </Routes>
+      </Routes> */}
     </div>
   )
 }
