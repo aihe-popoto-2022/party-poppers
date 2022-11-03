@@ -33,7 +33,11 @@ function Balloon() {
       {balloons.map((b, i) => {
         if (!b.popped) {
           return (
-            <div data-testid="balloon" className="balloon-container" key={b.id}>
+            <div
+              data-testid="balloon-test"
+              className="balloon-container"
+              key={b.id}
+            >
               <div
                 className="balloon"
                 style={{ backgroundColor: b.color }}
