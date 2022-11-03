@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
 function Balloon() {
-  const handleButton = (event) => {
-    const balloonArr = Array(25)
+  const handleButton = () => {
+    const balloonArr = Array(10)
       .fill()
       .map((_, i) => ({
         id: i,
@@ -15,7 +15,7 @@ function Balloon() {
   }
   const startColor = 'grey'
 
-  const balloonArr = Array(25)
+  const balloonArr = Array(10)
     .fill()
     .map((_, i) => ({ id: i, popped: false, color: startColor }))
   const [balloons, setBalloons] = useState(balloonArr)

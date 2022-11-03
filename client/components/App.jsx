@@ -33,11 +33,10 @@ function App() {
           <Route path="/" element={<Balloon />}></Route>
         </Routes>
       </div>
-      <br></br>
 
-      <div>
+      <footer>
         <ProgressBar value={value} max={100} />
-      </div>
+      </footer>
     </div>
   )
 }
