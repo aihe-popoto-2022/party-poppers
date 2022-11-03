@@ -25,7 +25,6 @@ function App() {
       <div>
         <Title />
       </div>
-      <div className="button"></div>
       <br></br>
       <div className="balloonpen">
         <Routes>

@@ -29,7 +29,12 @@ function Balloon() {
 
   return (
     <div>
-      <button onClick={handleButton}>Random colour</button>
+      <div>
+        <button className="button" onClick={handleButton}>
+          Random colour
+        </button>
+      </div>
+      <br></br>
       {balloons.map((b, i) => {
         if (!b.popped) {
           return (
