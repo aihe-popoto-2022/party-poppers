@@ -1,18 +1,23 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
-import Title from './Title'
 import RandomButton from './RandomButton'
+import ProgressBar from '../ProgressBar'
+
+// import Title from './Title'
+import Balloon from './Balloon'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <div>
-      <Title />
       <div>
-        <RandomButton/>
+        <RandomButton />
       </div>
-      {/* <Routes>
-        <Route />
-      </Routes> */}
+      <div>
+        <ProgressBar value={20} max={100} />
+      </div>
+      <Routes>
+        <Route path="/" element={<Balloon />}></Route>
+      </Routes>
     </div>
   )
 }
