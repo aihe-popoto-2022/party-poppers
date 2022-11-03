@@ -2,8 +2,21 @@ import React, {useState} from 'react'
 
 
 function RandomButton(){
-  const originalColour=
-  const [newColour,setNewColour ]= useState('red')
+ 
+  const [newColor, setNewColor] = useState({backgroundColor: 'red'})
+
+  const handleButton=(event) => {
+    setNewColor
+    ({backgroundColor: `#${Math.floor(Math.random() * 0x1000000)
+       .toString(16)
+       .padStart(6, 0)}`
+      })
+    }
+    console.log(backgroundColor)
+  return (<button onClick = {handleButton}>
+
+  </button>
+    )
 }
 
 
@@ -12,3 +25,4 @@ function RandomButton(){
 // function to choose random colour
 // event handler to handle button click
 // button 
+export default RandomButton
