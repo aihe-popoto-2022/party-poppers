@@ -1,6 +1,20 @@
 import React, { useState } from 'react'
 
 function Balloon() {
+  //possible button code
+
+  // const [newColor, setNewColor] = useState({
+  //   backgroundColor: 'grey',
+  // })
+
+  // const handleButton = (event) => {
+  //   setNewColor({
+  //     backgroundColor: `#${Math.floor(Math.random() * 0x1000000)
+  //       .toString(16)
+  //       .padStart(6, 0)}`,
+  //   })
+  // }
+
   const colors = ['red', 'green', 'blue']
   const generateColor = () => {
     const index = Math.floor(Math.random() * colors.length)
@@ -28,6 +42,7 @@ function Balloon() {
                 className="balloon"
                 style={{ backgroundColor: b.color }}
                 onClick={() => onPop(i)}
+                //onClick={handleButton} we want to pass this into the App component where we have the randBtn
               ></div>
             </div>
           )
@@ -44,3 +59,17 @@ function Balloon() {
 }
 
 export default Balloon
+
+{
+  /* <motion.div
+  animate={{
+    x: 0,
+    backgroundColor: "#000",
+    boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.2)",
+    position: "fixed",
+    transitionEnd: {
+      display: "none",
+    },
+  }}
+/> */
+}
