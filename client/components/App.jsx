@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import RandomButton from './RandomButton'
 import ProgressBar from '../ProgressBar'
 
-// import Title from './Title'
 import Balloon from './Balloon'
-//import Title from './Title'
+import Title from './Title'
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -24,9 +22,7 @@ function App() {
 
   return (
     <div>
-      <div>
-        <RandomButton />
-      </div>
+      <Title />
       <div>
         <ProgressBar value={value} max={100} />
       </div>

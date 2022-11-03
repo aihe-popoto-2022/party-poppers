@@ -1,30 +1,23 @@
 import React, { useState } from 'react'
 
 function Balloon() {
-
-  //possible button code
-
-  // const [newColor, setNewColor] = useState({
-  //   backgroundColor: 'grey',
-  // })
-
-  // const handleButton = (event) => {
-  //   setNewColor({
-  //     backgroundColor: `#${Math.floor(Math.random() * 0x1000000)
-  //       .toString(16)
-  //       .padStart(6, 0)}`,
-  //   })
-  // }
-
-
-  const colors = ['red', 'green', 'blue']
-  const generateColor = () => {
-    const index = Math.floor(Math.random() * colors.length)
-    return colors[index]
+  const handleButton = (event) => {
+    const balloonArr = Array(25)
+      .fill()
+      .map((_, i) => ({
+        id: i,
+        popped: false,
+        color: `#${Math.floor(Math.random() * 0x1000000)
+          .toString(16)
+          .padStart(6, 0)}`,
+      }))
+    setBalloons(balloonArr)
   }
+  const startColor = 'grey'
+
   const balloonArr = Array(25)
     .fill()
-    .map((_, i) => ({ id: i, popped: false, color: generateColor() }))
+    .map((_, i) => ({ id: i, popped: false, color: startColor }))
   const [balloons, setBalloons] = useState(balloonArr)
   const onPop = (index) => {
     setBalloons((balloons) => {
@@ -33,8 +26,10 @@ function Balloon() {
       return b
     })
   }
+
   return (
     <div>
+      <button onClick={handleButton}>Random colour</button>
       {balloons.map((b, i) => {
         if (!b.popped) {
           return (
@@ -43,9 +38,6 @@ function Balloon() {
                 className="balloon"
                 style={{ backgroundColor: b.color }}
                 onClick={() => onPop(i)}
-
-                //onClick={handleButton} we want to pass this into the App component where we have the randBtn
-
               ></div>
             </div>
           )
@@ -63,7 +55,6 @@ function Balloon() {
 
 export default Balloon
 
-
 {
   /* <motion.div
   animate={{
@@ -75,4 +66,3 @@ export default Balloon
   }}
 /> */
 }
-
