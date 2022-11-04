@@ -39,7 +39,6 @@ function Balloon() {
               key={b.id}
             >
               <div
-                className="balloon"
                 style={{ backgroundColor: b.color }}
                 onClick={() => onPop(i)}
               ></div>

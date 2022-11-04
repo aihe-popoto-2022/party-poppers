@@ -6,10 +6,12 @@ import userEvent from '@testing-library/user-event'
 import Balloon from './Balloon'
 
 describe('<Balloon/>', () => {
-  it('makes balloon go bye bye! when you click on them', async () => {
+  it('makes balloon disappear when you click on them', async () => {
     render(<Balloon />)
-    const balloon = screen.getByTestId('balloon-test')
-    await userEvent.click(balloon)
-    expect(balloon).toHaveStyle({ 'background-color': ' #faf8f1' })
+
+    const balloon = screen.getAllByTestId('balloon-test')
+    console.log('ballon', balloon)
+    await userEvent.click(balloon[0])
+    expect(balloon[0]).toHaveStyle({ 'background-color': ' #faf8f1' })
   })
 })
