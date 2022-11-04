@@ -1,6 +1,6 @@
 body {
   background-color: #faf8f1;
-  color: #faf8f1;
+  color: #000000;
   font-family: 'Poppins', sans-serif;
   text-align: center;
   padding: 0.5%;
@@ -12,7 +12,7 @@ body {
   background-size: contain;
   position: absolute;
   bottom: 0%;
-  animation: move_y 50s forwards, oscil1 6s infinite;
+  animation: move_y 20s forwards, oscil1 6s infinite;
   left: 45%;
 
 }
@@ -27,6 +27,10 @@ body {
   border: 1px solid #faf8f1;
 }
 
+.image {
+  width: 500px;
+
+}
 
 .popped-balloon {
   width: 50px;
@@ -87,18 +91,12 @@ body {
   text-align: center;
 }
 
-.progress {
-  height: 100%;
-  width: 100%;
-  border-radius: 0px;
-  background-color: rgb(251, 222, 34);
-  text-align: center;
-}
-
 .instructions {
-
+  position: relative;
   height: 100px;
   width: 500px;
+  margin: 10px;
+  padding: 10px;
   border: 2px solid black;
   border-radius: 15px;
   background-color: rgb(68, 197, 51);
@@ -107,15 +105,28 @@ body {
 }
 
 .box {
+  background: #faf8f1;
   position: relative;
-  width: 100%;
-  height: 25px;
-  background: rgba(132, 231, 18, 0.477);
-  text-align: center;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  margin: 5%;
 
+  border-radius: 15px;
+  text-align: center;
 
 }
 
+
+.box-demonstration {
+  position: relative;
+  background: #faf8f1;
+  padding: 20px;
+  margin: 50px;
+  border: 11px solid rgb(235, 133, 226);
+  text-align: center;
+  border-radius: 15px;
+}
 
 .button {
   display: inline-block;
@@ -126,15 +137,26 @@ body {
   padding: 22px 33px;
   font-size: 26px;
   line-height: 26px;
-  text-decoration: none;
-  color: #FFF;
-  background: #e54c49;
+  color: black;
+  background: #f27ce3;
   outline: none;
   border-radius: 15px;
-
-
-
   position: relative;
   overflow: visible;
 
+}
+
+.progress {
+  display: inline-block;
+  position: relative;
+  height: 100px;
+  width: 500px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: rgb(185, 232, 171);
+  text-align: center;
 }
