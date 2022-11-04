@@ -1,3 +1,12 @@
+# Party Poppers 
+## Notes
+- CSS branch is most up to date branch
+- Deployed here http://party-poppers.devacademy.nz/
+
+
+
+
+
 # React Boilerplate
 
 ## Packages Included
