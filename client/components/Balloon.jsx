@@ -62,6 +62,7 @@ function Balloon() {
         if (!b.popped) {
           return (
             <div
+              data-testid="balloon-test"
               className="balloon-container"
               style={{ left: b.left, marginBottom: b.bottom }}
               key={b.id}
