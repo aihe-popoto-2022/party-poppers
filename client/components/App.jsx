@@ -3,6 +3,7 @@ import ProgressBar from '../ProgressBar'
 
 import Balloon from './Balloon'
 import Title from './Title'
+import Ian from './Ian'
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
         }
         return newValue
       })
-    }, 10000)
+    }, 1000)
   }, [])
 
   return (
@@ -25,17 +26,19 @@ function App() {
       <div>
         <Title />
       </div>
+
       <br></br>
-      <div className="balloonpen">
+      <div>
         <Routes>
           <Route path="/" element={<Balloon />}></Route>
+          <Route path="/Ian" element={<Ian />} />
         </Routes>
-      </div>
-      <br></br>
-
-      <div>
         <ProgressBar value={value} max={100} />
       </div>
+
+      {/* <footer>
+        <ProgressBar value={value} max={100} />
+      </footer> */}
     </div>
   )
 }
