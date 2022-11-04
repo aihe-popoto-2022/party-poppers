@@ -18,7 +18,7 @@ function App() {
         }
         return newValue
       })
-    }, 10000)
+    }, 1000)
   }, [])
 
   return (
@@ -33,11 +33,12 @@ function App() {
           <Route path="/" element={<Balloon />}></Route>
           <Route path="/Ian" element={<Ian />} />
         </Routes>
+        <ProgressBar value={value} max={100} />
       </div>
 
-      <footer>
+      {/* <footer>
         <ProgressBar value={value} max={100} />
-      </footer>
+      </footer> */}
     </div>
   )
 }

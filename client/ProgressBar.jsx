@@ -5,7 +5,10 @@ const ProgressBar = ({ value, max }) => {
   return (
     <div className="progress">
       <progress value={value} max={max} />
-      <span>{(value / max) * 100}% Ruined</span>
+      <span>
+        <br></br>
+        {(value / max) * 100}% Ruined
+      </span>
     </div>
   )
 }

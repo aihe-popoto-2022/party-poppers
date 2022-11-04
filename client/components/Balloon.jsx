@@ -16,7 +16,7 @@ function Balloon() {
     }))
     setBalloons(newBalloonArray)
   }
-  const startColor = 'grey'
+  const startColor = '#faf8f1'
 
   const [balloonArr] = useState(
     Array(10)
@@ -46,9 +46,15 @@ function Balloon() {
 
   return (
     <div>
+      <p>
+        Ian is a <strong>horrible child</strong> and today is his birthday. Pop
+        all the balloons before they reach the top of the page to make baby Ian
+        cry.
+      </p>
+
       <div>
         <button className="button" onClick={handleButton}>
-          Random colour
+          Balloons!
         </button>
       </div>
       <br></br>
