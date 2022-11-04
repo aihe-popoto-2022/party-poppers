@@ -3,7 +3,7 @@ import ProgressBar from '../ProgressBar'
 
 import Balloon from './Balloon'
 import Title from './Title'
-// import Ian from './Ian'
+import Ian from './Ian'
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -28,9 +28,10 @@ function App() {
       </div>
 
       <br></br>
-      <div className="balloonpen">
+      <div>
         <Routes>
           <Route path="/" element={<Balloon />}></Route>
+          <Route path="/Ian" element={<Ian />} />
         </Routes>
       </div>
 
