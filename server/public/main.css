@@ -27,6 +27,10 @@ body {
   border: 1px solid #faf8f1;
 }
 
+.image {
+  width: 500px;
+
+}
 
 .popped-balloon {
   width: 50px;

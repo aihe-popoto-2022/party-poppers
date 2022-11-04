@@ -46,11 +46,11 @@ function Balloon() {
 
   return (
     <div>
-      <p>
+      <h3>
         Ian is a <strong>horrible child</strong> and today is his birthday. Pop
         all the balloons before they reach the top of the page to make baby Ian
         cry.
-      </p>
+      </h3>
 
       <div>
         <button className="button" onClick={handleButton}>
