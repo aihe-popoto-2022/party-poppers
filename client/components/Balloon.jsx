@@ -56,12 +56,12 @@ function Balloon() {
         if (!b.popped) {
           return (
             <div
+              data-testid="balloon-test"
               className="balloon-container"
               style={{ left: b.left, marginBottom: b.bottom }}
               key={b.id}
             >
               <div
-                className="balloon"
                 style={{ backgroundColor: b.color }}
                 onClick={() => onPop(i)}
               ></div>
